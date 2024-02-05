@@ -1,10 +1,7 @@
-import { Room } from "./Room";
-
-
 export default function Page() {
   return (
-    <Room>
-      <h1 className="font-xl"> Moe</h1>
-    </Room>
+    <div className="h-[100vh] w-full flex justify-center items-center text-center">
+      <h1 className="text-2xl">Brain Wave</h1>
+    </div>
   );
 }
