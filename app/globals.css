@@ -25,3 +25,11 @@
     @apply flex justify-between px-3 py-2 hover:bg-primary-grey-200 !important;
   }
 }
+
+nav {
+  background-color: blanchedalmond;
+}
+
+.colol{
+  background-color: blanchedalmond;
+}

@@ -39,7 +39,7 @@ const Live = () => {
         value: cursorState.reaction,
       });
     }
-  }, 20);
+  }, 100);
 
   useEventListener((eventData) => {
     const event = eventData.event as ReactionEvent;
@@ -120,7 +120,7 @@ const Live = () => {
         setCursorState({
           mode: CursorMode.Hidden,
         });
-      } else if (e.key === "|") {
+      } else if (e.key === "e") {
         setCursorState({
           mode: CursorMode.ReactionSelector,
         });

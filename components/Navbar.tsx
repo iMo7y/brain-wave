@@ -16,8 +16,8 @@ const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveE
    // (Array.isArray(value) && value.some((val) => val?.value === activeElement?.value));
 
   return ( 
-    <nav className="flex select-none items-center justify-between gap-4 bg-primary-black px-5">
-      <Image src="/assets/logo.png" alt="Brain Wave Logo" width={58} height={20} />
+    <nav className="flex select-none items-center justify-between gap-4 px-5">
+      <Image src="/assets/logo.png" alt="Brain Wave Logo" width={40} height={40} />
 
       {/* <ul className="flex flex-row">
         {navElements.map((item: ActiveElement | any) => (
@@ -71,5 +71,5 @@ const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveE
     </nav>
   );
 };
-//1:38:30
+
 export default memo(Navbar, (prevProps, nextProps) => prevProps.activeElement === nextProps.activeElement);
