@@ -1,5 +1,5 @@
 # Brain Wave 🧠
-
+!(canvas.png)
 Brain Wave is a collaborative design tool similar to Figma, built using Next.js 14 and TypeScript. It integrates Liveblocks for real-time collaboration, offering features such as cursor chat, comments, reactions, and the ability to draw designs on the canvas using Fabric.js.
 
 ## Features
