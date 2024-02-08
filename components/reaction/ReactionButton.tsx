@@ -10,6 +10,7 @@ const ReactionSelector = ({ setReaction }: Props) => (
     onPointerMove={(e) => e.stopPropagation()}
   >
     <ReactionButton reaction='👍' onSelect={setReaction} />
+    <ReactionButton reaction='❤️' onSelect={setReaction} />
     <ReactionButton reaction='🔥' onSelect={setReaction} />
     <ReactionButton reaction='😍' onSelect={setReaction} />
     <ReactionButton reaction='👀' onSelect={setReaction} />
