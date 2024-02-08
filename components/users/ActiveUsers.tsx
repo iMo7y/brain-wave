@@ -1,22 +1,38 @@
-import { useOthers, useSelf } from "@/liveblocks.config";
-import { Avatar } from "./Avatar";
-import styles from "./Avatar.module.css";
-import { generateRandomName } from "@/lib/utils";
+"use client";
+
 import { useMemo } from "react";
 
+import { generateRandomName } from "@/lib/utils";
+import { useOthers, useSelf } from "@/liveblocks.config";
+
+import Avatar from "./Avatar";
+
 const ActiveUsers = () => {
-  const users = useOthers();
+  /**
+   * useOthers returns the list of other users in the room.
+   *
+   * useOthers: https://liveblocks.io/docs/api-reference/liveblocks-react#useOthers
+   */
+  const others = useOthers();
+
+  /**
+   * useSelf returns the current user details in the room
+   *
+   * useSelf: https://liveblocks.io/docs/api-reference/liveblocks-react#useSelf
+   */
   const currentUser = useSelf();
+
+  // memoize the result of this function so that it doesn't change on every render but only when there are new users joining the room
   const memoizedUsers = useMemo(() => {
-    const hasMoreUsers = users.length > 2;
+    const hasMoreUsers = others.length > 2;
 
     return (
-      <div className='flex items-center justify-center gap-1 py-2'>
+      <div className='flex items-center justify-center text-white gap-1'>
         {currentUser && (
-          <Avatar name='You' otherStyles='border-[3px] border-primary-green' />
+          <Avatar name='You' otherStyles='border-[2px] border-primary-green text-white' />
         )}
 
-        {users.slice(0, 2).map(({ connectionId }) => (
+        {others.slice(0, 2).map(({ connectionId }) => (
           <Avatar
             key={connectionId}
             name={generateRandomName()}
@@ -25,13 +41,13 @@ const ActiveUsers = () => {
         ))}
 
         {hasMoreUsers && (
-          <div className='z-10 -ml-3 flex h-9 w-9 items-center justify-center rounded-full bg-primary-black'>
-            +{users.length - 2}
+          <div className='z-10 -ml-3 flex h-9 w-9 items-center text-white justify-center rounded-full bg-primary-black'>
+            +{others.length - 2}
           </div>
         )}
       </div>
     );
-  }, [users.length]);
+  }, [others.length]);
 
   return memoizedUsers;
 };

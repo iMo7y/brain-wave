@@ -2,32 +2,32 @@ export const COLORS = ["#DC2626", "#D97706", "#059669", "#7C3AED", "#DB2777"];
 
 export const shapeElements = [
   {
-    icon: "/assets/rectangle.svg",
+    icon: "/assets/rect.gif",
     name: "Rectangle",
     value: "rectangle",
   },
   {
-    icon: "/assets/circle.svg",
+    icon: "/assets/circle.gif",
     name: "Circle",
     value: "circle",
   },
   {
-    icon: "/assets/triangle.svg",
+    icon: "/assets/trii.gif",
     name: "Triangle",
     value: "triangle",
   },
   {
-    icon: "/assets/line.svg",
+    icon: "/assets/linee.gif",
     name: "Line",
     value: "line",
   },
   {
-    icon: "/assets/image.svg",
+    icon: "/assets/photo.gif",
     name: "Image",
     value: "image",
   },
   {
-    icon: "/assets/freeform.svg",
+    icon: "/assets/draw.gif",
     name: "Free Drawing",
     value: "freeform",
   },
@@ -35,32 +35,32 @@ export const shapeElements = [
 
 export const navElements = [
   {
-    icon: "/assets/select.svg",
+    icon: "/assets/select.png",
     name: "Select",
     value: "select",
   },
   {
-    icon: "/assets/rectangle.svg",
+    icon: "/assets/rect.png",
     name: "Rectangle",
     value: shapeElements,
   },
   {
-    icon: "/assets/text.svg",
+    icon: "/assets/t.png",
     value: "text",
     name: "Text",
   },
   {
-    icon: "/assets/delete.svg",
+    icon: "/assets/trash.png",
     value: "delete",
     name: "Delete",
   },
   {
-    icon: "/assets/reset.svg",
+    icon: "/assets/res.png",
     value: "reset",
     name: "Reset",
   },
   {
-    icon: "/assets/comments.svg",
+    icon: "/assets/chat.png",
     value: "comments",
     name: "Comments",
   },
