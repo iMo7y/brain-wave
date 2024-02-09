@@ -24,16 +24,6 @@ Brain Wave is a collaborative design tool similar to Figma, built using Next.js 
   
 - 🖌️ **Fabric.js:** Fabric.js is utilized for drawing shapes and managing canvas elements, offering a robust library for interactive design creation.
 
-## Getting Started
-
-To get started with Brain Wave, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/your-username/brain-wave.git`
-2. Navigate to the project directory: `cd brain-wave`
-3. Install dependencies: `npm install`
-4. Start the development server: `npm run dev`
-5. Access the application at `http://localhost:3000`
-
 
 ## Acknowledgements
 
@@ -42,4 +32,11 @@ To get started with Brain Wave, follow these steps:
 
 ## Contact
 
-For inquiries or support, please contact me! at [saadisaadi768@gmail.com](saadisaadi768@gmail.com).
+For inquiries or support, please contact me! at
+
+Insta: @imo7y__
+Linkedin:@mohammedsaadi
+
+
+
+.
