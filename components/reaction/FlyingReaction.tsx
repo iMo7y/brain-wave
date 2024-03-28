@@ -4,7 +4,7 @@ type Props = {
   x: number;
   y: number;
   timestamp: number;
-  value: string;
+  value: string; 
 };
 
 const FlyingReaction = ({ x, y, timestamp, value }: Props) => (
