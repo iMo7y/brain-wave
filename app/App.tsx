@@ -11,7 +11,7 @@ import {
   handleCanvasObjectModified,
   handleCanvasObjectMoving,
   handleCanvasObjectScaling,
-  handleCanvasSelectionCreated,
+  handleCanvasSelectionCreated, 
   handleCanvasZoom,
   handlePathCreated,
   handleResize,
@@ -55,7 +55,7 @@ const Home = () => {
    * it outside the canvas event listeners.
    */
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const fabricRef = useRef<fabric.Canvas | null>(null);
+  const fabricRef = useRef<fabric.Canvas | null>(null); 
 
   /**
    * isDrawing is a boolean that tells us if the user is drawing on the canvas.
